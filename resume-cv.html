@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=2.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Sanchez" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <title>Resume Design using Flexbox</title>
+  <style>
+    html {
+      background-color: #ebeced;
+      padding: 0 1em;
+    }
+    body {
+      background-color: rgb(255, 255, 255);
+      margin: 1em auto;
+      max-width: 50em;
+    }
+    p, ul {
+      font-family: 'Sanchez', serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    :root {
+      --yellowish: #e9e1fc;
+      --dark-purple: #263547;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: var(--dark-purple);
+      height: 150px;
+    }
+    .logo {
+      background: url('./rss.png') no-repeat;
+      width: 32px;
+      height: 32px;
+      margin: 20px;
+    }
+    .title-holder {
+      align-items: center;
+    }
+    .nama {
+      color: var(--yellowish);
+      font-family: 'Montserrat', serif;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .designare {
+      color: #ffffff;
+      font-family: 'Sanchez', serif;
+      text-transform: uppercase;
+    }
+    .content-body {
+      display: flex;
+      flex-direction: row;
+    }
+    .wrapper {
+      margin: 20px;
+    }
+    .section-left {
+      flex: 1;
+      background-color: var(--yellowish);
+    }
+    .section-left ul {
+      list-style: none;
+      margin-left: -40px;
+      text-transform: capitalize;
+      font-size: 12px;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 0.9em;
+      font-weight: bold;
+      font-family: 'Montserrat', serif;
+      letter-spacing: 2px;
+    }
+    h3 {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-family: 'Sanchez', serif;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+    h4 {
+      font-family: 'Sanchez', serif;
+      font-weight: normal;
+      font-size: 0.8em;
+      margin-top: -10px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+    .section-right {
+      flex: 2;
+    }
+    .section-right .wrapper {
+      margin-left: 50px;
+    }
+    .section-right ul {
+      margin-left: -20px;
+    }
+    .section-right h2 {
+      color: var(--yellowish);
+      font-weight: bold;
+    }
+    .gpa {
+      margin-top: -15px;
+    }
+    .footer {
+      background-color: var(--dark-purple);
+    }
+    .ps {
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="title-holder">
+        <div class="name">Aishwarya kasar</div>
+        <div class="student">B.Tech in computer science and techonlogy</div>
+      </div>
+    </div> <!-- end header -->
+
+    <div class="content-body">
+      <div class="section-left">
+        <div class="wrapper">
+          <div class="lists">
+            <h2>Expertise areas/ skills</h2>
+            <ul>
+              <li>c</li>
+              <li>c++</li>
+              <li>HTML</li>
+              <li>css</li>
+              <li>python</li>
+              <li>data structure</li>
+              <li>software testing</li>
+              <li>uml diagrams</li>
+            </ul>
+          </div>
+
+          <div class="lists">
+            <h2>Personal intersts</h2>
+            <ul>
+              <li>badminton</li>
+              <li>coding</li>
+              <li>reading</li>
+              <li>innovative ideas</li>
+            </ul>
+          </div>
+
+          <div class="lists">
+            <h2>contact</h2>
+            <p>Phone number: 9234786790</p>
+            <p>Email address: aishwaryakasar@gmail.com</p>
+          </div>
+
+          <div class="lists">
+            <h2>Education</h2>
+            <ul>
+              <li>MIT-WPU</li>
+              <li> B.Tech in computer science and engieneering</li>
+               <li> cgpa-7.86/10</li>
+            </ul>
+            <ul>
+              <li>SPPAC</li>
+                  <li>board-HSC</li>
+                 <li> Percentage-80</li>
+
+            </ul>
+            <ul>
+             <li>RJEMHS</li>
+              <li>board-ssc</li>
+              <li>percentage-87</li>
+            </ul>
+          </div>
+
+        </div> <!-- end wrapper -->
+      </div> <!-- end section-left -->
+      <div class="section-right">
+        <div class="wrapper">
+          <div class="content">
+            <h2>about</h2>
+            <p>I am a self motivated person and I try to exceed my superior's expectations with high-quality work. Being a fast learner, I quickly pick up business knowledge related to my project. Lastly, I would like to add that I work well both as an individual contributor and also as a team member. Collectively, all these skills put together makes me a complete package for this job.</p>
+          </div>
+
+          <div class="content">
+            <h2>projects</h2>
+            <h3>
+              <ul>
+              hospital management system
+               <li> key skills- uml diagrams,testing,analysis</li>
+            </ul>
+            </h3>
+            <ul>
+            <h3>Tv series website testing
+                <li>key skills-testing, analysis, funcational testing.</li>
+            </ul>
+            </h3>
+             <ul>
+            <h3>fraud detection of credit card system using machine learning
+               <li> skills- machine learnng,coding,analysis</li>
+            </ul>
+            </h3>
+            
+          </div>
+
+
+        </div>
+      </div> <!-- end section right -->
+    </div>
+
+    <div class="footer">
+    
+    </div>
+  </div>
+</body>
+</html>
